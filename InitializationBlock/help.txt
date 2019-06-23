@@ -1,0 +1,31 @@
+Types of Initialization blocks
+	- Instance Initialization Block
+	- Static Initialization Block
+
+----------
+instance
+------------------
+Can make more than 1 Initialization Block, compiler make it 1 block
+
+Append the c Block code in constructor block
+
+An instance initializer or initialization block declared in a class, is executed when an 
+	instance  of the class is created
+
+return keyword cannot be used in Initialization block
+
+Instance initialiers are permitted to refer to the current object via the keyword this and use the keyword super
+
+static initialiser run once in life of class
+
+
+-------------
+static
+------------
+A static initializer declared in a class is executed when the class is initialized
+
+Static initializers may be used to initialize the class variables of the class
+
+return keyword cannot be used in static initialization block
+
+this or super can not be used in static block

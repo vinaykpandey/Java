@@ -1,0 +1,22 @@
+class SubClass extends SuperClass{}
+
+extends is keyword 
+
+Base Class =>  Super Class, Parent Class
+Derived Class =>  Sub Class, Child Class
+
+
+In the Java, each class is allowed to have one direct superclass, and each superclass has the 
+	potential for an unlimited number of subclasses.
+
+Private members of the superclass are not accessible by the subclass and can only be indirectly 
+    accessed.
+
+Methods that have default accessibility in the superclass are also not accessible by superclasses 
+	in the other packages
+	
+
+Java Supports:
+	Single Inheritance    => A <- B
+	Multilevel Inheritance => A <- B <- C
+	Hierarchial Inheritance =>  A <- B  , A <- C
