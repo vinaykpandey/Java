@@ -1,0 +1,21 @@
+Static member variable
+
+Static member function
+
+static variable not allowed inside methods
+
+static inner class is 
+
+
+
+---------
+
+static variables are declared in the class using static keyword
+
+static variables are by default initialized to its default value
+
+static variables has a single copy for the whole class and does not depend on the objects
+
+
+
+Note:  There will be only one public class in java file
