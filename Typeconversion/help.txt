@@ -1,0 +1,25 @@
+Every expression written in the java has a type that can be reduced from the 
+structure of the expression and the types of literals, variables, and the methods mentioned
+in the expression
+
+
+Widening Conversion
+int y = 3;
+float x =y; // widening conversion int -> float  (works fine)
+
+int y = (int)x; // works fine
+
+
+float x = 3.4f
+int y = x; // narrowing converiosn (error)
+
+# Note:  downgrading is error
+
+Possible converions
+
+byte -> short -> int -> long  ->  float -> double
+short -> int -> long  ->  float -> double
+char ->  int -> long  ->  float -> double
+int -> long  ->  float -> double
+long  ->  float -> double
+float -> double

@@ -1,0 +1,41 @@
+Java was developed by: James Gosling (Sun MicroSystem Inc) its a coffee breed.
+
+Java is Every Where:
+
+Mobiles, Client Machine, Server Machines, Embeded devices, smart phones, cloud 
+
+It shares the same basic features of the laungage and libraries
+
+WORA: Write Once, Run Anywhere
+
+Java Library is a collection of predefined classes
+
+Can use these classes either by inheriting them by instantiating them
+
+JAVA SE (Core Java)
+JAVA EE (Advance Java)
+JAVA ME(Micro Edition for mobiles)
+
+Many more...
+
+
+Version Date No of Class No of Packages
+1.0		May 1996	212		8
+1.1		Feb 1997 	503		23
+2.0		Dec-1998	1520 	59
+5.0		Sep-2004	3562	166
+6.0		Dec-20006	3792 	203
+7.0		Jul-2011	4042	209
+
+
+Features
+	Simple
+	OOP(almost 100%)
+	Distrubuted
+	Interepreted
+	Robust (fault tolerance)
+	Secure
+	Portable
+	Multi-threaed
+	Garbage Collector
+

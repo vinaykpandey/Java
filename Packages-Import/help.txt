@@ -1,0 +1,28 @@
+Its a way of we organize files into different directories according to their functionality,
+	useablity as well as category they should belong to
+
+Files in one directory(or package) would have different functionality from those of another 
+	directory
+
+
+eg: java.io
+
+	files in java.io package do something related to I/O, but files in java.net package give us
+			the way to deal with the Network
+
+Name Collision
+	Packaging also help us to avoid class name collision when we use the same class name as that  
+		of others.
+
+	The benefits of using packages reflects the ease of maintenance, organization and 
+		collaboration among the developers.
+
+
+	
+Import
+----------
+import is a keyword in java
+
+Its used to import classes of the other packages
+
+

@@ -1,0 +1,26 @@
+Why Class ?
+
+We need to store set of information in a data type
+
+
+Primitive data type
+
+
+Non-primitive data type
+
+
+
+
+class is a description of an object's property and behaviour
+
+Creating class is as good as creating data type
+
+Class is defining a category of data
+
+
+Object:
+
+Object is a real world entity
+Object is an instance of a Class
+Object consumes memory to hold property values
+

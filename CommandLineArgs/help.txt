@@ -1,0 +1,2 @@
+A java application can accept any numbe of arguments from the command line
+

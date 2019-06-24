@@ -1,0 +1,46 @@
+Java support 4 categories of accessibilty rules
+	private
+	proptected
+	public
+	default
+
+Modifiers can be used for class, member variables and member functions
+
+With Class
+----------------
+Outer Class:
+	for this, there can by only 2 possibilites:
+	1) class is a public class
+	2) class is without any access rules (that mean it is a default type)
+
+Inner Class:
+	for this any among 4 can be used
+
+
+Note
+---------------
+There can be only one public class in a single java file
+
+The name of the java file must be the same as the name of the public class
+
+Only public class can be accessed directly from outside the package
+
+
+-------------------------------------
+Member variables and Functions/Method
+----------------------------------
+
+private:
+	they can not be accessed from outside the class body, only access in the class where declare
+
+protected:
+	they can be accessed from any class of the same package and child class from other package
+
+public:
+	theyare accessible from any class of any package
+
+default:
+	they are accessible only from the class of same package
+
+
+

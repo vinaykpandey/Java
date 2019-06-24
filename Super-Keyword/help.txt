@@ -1,0 +1,18 @@
+--------
+Super keyword
+--------
+In inheritance, subclass object when call an instance member function of subclass only,
+function contains implicit reference variables this and super both reffering to the current object(Object of subclass)
+
+The only difference this vs super :
+	this:  reference variable is of subclass type
+	super:  reference variable is of superclass type
+
+
+	
+
+If your method overrides one of its superclass's methods you can invoke the 
+	overriden method(superclass version of the method)
+	through the use of the keyword super
+
+It avoids name conflicts between member variables of superclass and subclass

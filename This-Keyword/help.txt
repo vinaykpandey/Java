@@ -1,0 +1,15 @@
+The this object reference is a local variable in instance member methods referring the caller object
+
+this keyword is used as reference to the current object which is an instance of the current class
+
+the this reference to the current object is useful to situations where a local variables hides, or shadows, a fields with same name
+
+------
+this
+------
+If a method needs to pass the current object to another method, it can do so using the this 	
+	reference
+
+Note that the this reference can not be used in a static context, as static code is not executed in the context of any object
+
+this => this ref is only for instance methods/ variable

@@ -1,0 +1,16 @@
+Overloading
+----------------
+
+If 2 methods of a class (whether both declared in the same class, or both inherited by class,
+	or one declared, one inherited) have the same name but signatures are different, then the
+	method name is said to be overloaded.
+
+Method overloading is a way to implement polymophism
+
+
+Overriding
+------------------
+Method overriding is defining a method in subclass with the same signature with specific 
+	implementation in respect to the subclass
+
+

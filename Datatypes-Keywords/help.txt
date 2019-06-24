@@ -1,0 +1,45 @@
+abstract	default		goto		package		this
+assert		do 			if 			private 	throw
+boolean		double		implements	protected	throws
+break		enum		import		public		transient
+byte		else		instanceof	return		true
+case		extends		int         short		try
+catch 		false		interface	static		void
+char		final		long		strictfp	volatile
+class		finally		native		super		while
+const		float		new			switch		
+continue	for			null		synchronized
+
+
+A type identifies a set of values (and their representation in memory) and a set
+of operations that perform these values into other values of that set
+
+Java is strictly types language
+
+1: Primitive Data Types 
+2: User-defined Types
+
+
+Primitive:
+Name		Size
+boolean      implementation depend
+char		 16 bits(stores unicode)
+byte		 8 bits
+short 		 16 bits
+int          32 bits
+long         64 bits
+float		 32 bits
+double 		 64 64 bits
+
+
+eg:
+	int x;
+	int[] ages;
+	String name: // a in built data type in java
+
+
+
+
+
+
+

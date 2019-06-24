@@ -1,0 +1,42 @@
+final instance variable
+final static variable
+final local varibale (inside a function)
+final class
+final mehods
+
+-----------------------
+final instance variable
+-----------------------
+A java variable can be declared using the keyword final. Then the final variable can be assigned 	only once.
+
+A variable that is decalred as final and not initialized is called as a blank final variable.
+	A blank final variable forces either the constructors to initialize it or initialization 
+	block to this job.
+
+-------------------
+final static variable
+--------------------
+static member variable when qualified with final keyword, it becomes blank until initialzed
+
+final static variable can be initialized during declaration or within the static block
+
+--------------------
+final local variable
+--------------------
+
+local variables that are final must be intialized before its use,  but we remember, this rule is 
+	applicable to non final local variables too.
+
+once they are initialized, can not be altered
+
+--------------
+final class 
+-------------
+Java classes declared as final can not ve extended,, Restricting the inheritance
+
+-------------
+final methods
+-------------
+
+Methods declared as final can not be overridden
+

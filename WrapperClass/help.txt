@@ -1,0 +1,39 @@
+Its not 100% OOP because it's have Primitive data type
+
+-----
+
+Java allows you to include the primitives in the family of object by using what are called 
+	wrapper class.
+
+There is wrapper class for every primitive data type in java
+
+=====================================
+Primitive type       Wrapper Class
+boolean				Boolean
+byte				Byte
+char				Character
+short				Short
+int					Integer
+long				Long
+float				Float
+double				Double
+
+
+Note: first letter of class is Capital 
+
+Imp function
+
+valueOf()
+	static method
+	return object reference of relative wrapper class
+
+parseXxx()
+	static method
+	Xxx can be replaced by any primitive type
+	it returns xxx type of value
+
+xxxValue()
+	instance method of wrapper class
+	xxx can be replaced by any primitive type
+	return corresponding primitive type
+
