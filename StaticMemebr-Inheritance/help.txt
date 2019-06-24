@@ -1,0 +1,17 @@
+A class Xyz inherits from its direct superclass all concrete methods m (both static and instance ) of the superclass
+
+No method declared in Xyz has same signature 
+
+--
+Its a compiled time error if a static method hides an instance method
+
+Its a compiled time error if an instance method overrides a static method
+
+both insatnce:  override
+both static: hide
+otherwise: error
+
+
+static member variables do not inherit
+
+
