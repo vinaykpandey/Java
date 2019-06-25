@@ -1,0 +1,9 @@
+constructor can call other constructors of the same class or superlcass
+
+constructor call from a constructor must be the first step.(call should appear in the first line)
+
+such series of invocation of constructors is known as constructor chanining
+
+First line of constructor is either super() or this () {by default its super() }
+
+constructor never contains super() and this() both

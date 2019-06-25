@@ -1,0 +1,21 @@
+constructor are not inherited by subclass
+
+when we create an  object of child class, constrcutor for child class created, 
+constrcutor of child class called the parent constructor
+
+--Note--
+Sub class's constuctor invokes constructor of super class
+
+Explicit call to the super class constructor from sub class's constructor can be made using super().
+
+you can write a subclass constructor that invokes the constructor of the superclass, either implicitly or by using the keyword super
+
+
+--
+Implicit constructors in superclass and subclass
+
+Implicit constructor in subclass  and explicit constructor in superclass
+
+Implicit constructor  in superclass and explicit constructor in subclass
+
+Explicit constructor in superclass and subclass

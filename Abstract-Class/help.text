@@ -1,0 +1,14 @@
+Abstract classes are declared with the abstract keyword
+
+An Abstract class can not be instansiated
+
+Abstract classes are used to declare common characteristics of subclasses
+
+It can only be used as a superclass for the other classes that extends the abstract class
+
+Like other class, an Abstract class can contain fields that describe the characteristics and methods that describes the actions that a class can perform
+
+We can create refrence but not object
+
+We can not create object of abstarct class but we can create reference variable of abstract class
+
