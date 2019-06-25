@@ -1,0 +1,31 @@
+String Class
+java.lang.String 
+
+Its final class, which implies no class can extend it
+
+Java String Class is immutable (it can not be changed on the same reference)
+
+A simple String can be created using literal enclosed double quotes as shown
+
+String name = "Vinay Pandey"; 
+ - Its feel like its a pre defined Data Type
+
+---
+
+If two or more Strings have the same set of characters in the same sequence then they share the same reference in memory
+
+String str1 = "Vinay";
+String str2 = "Vinay";
+String str3 = "Vin"+"ay";
+
+All the String references str1, str2 and str3 denote the same String object
+
+String str4 = new String ("Vinay"); // always create new object
+
+---
+The java.lang.String class differs from other classes, one difference being that the String objects can be used with the += and + operators for concatenation
+
+
+
+
+
