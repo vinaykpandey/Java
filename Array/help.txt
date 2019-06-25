@@ -1,0 +1,14 @@
+int arr[5] ; // error
+
+int arr[] = new int[] {10,20,30};
+
+
+int arr[] = new int[2] {10,20,30}; // error
+
+you can not mention size and values both in array
+
+
+arr is reference variable having the reference of the object (its an array)
+
+int arr[] = {10,20,40};
+
