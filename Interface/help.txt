@@ -13,3 +13,13 @@ If a class that implements an interface does not define all the methods of the i
 then it must be declared abstarct and the method definitions should be provided by the 
 subclass that extends the abstract class
 
+
+Multiple extension is allowed when extending interfaces i.e. one interface can extend none,
+one or more interfaces
+
+Object Refrence:
+---------------
+we can not create object of any interface but creation of object reference is possible
+
+object reference of interface can refer to any its subclass type
+
