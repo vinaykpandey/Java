@@ -1,0 +1,15 @@
+Interface definition begins with keyword interface
+
+interface just specify the method declaration(implicitly public abstract ) and can only
+contains fields/variable (which are implicitly public static final)
+
+All methods and variable is public inside interface
+
+An interface like that of an abstarct class can not be instantiated
+
+Interface do not have constructors
+
+If a class that implements an interface does not define all the methods of the interface,
+then it must be declared abstarct and the method definitions should be provided by the 
+subclass that extends the abstract class
+

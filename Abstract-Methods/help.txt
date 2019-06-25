@@ -1,0 +1,8 @@
+An Abstract class can include methods that contains no implementation. 
+These are called Abstract methods. The Abstract method declaration must then end with
+a semicolon rathor than a block
+
+If a class has any Abstract methods, whether declared or inherited, the entire class
+must be declared Abstract
+
+abstract methods cannot have a body 
