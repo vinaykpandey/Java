@@ -1,0 +1,28 @@
+Scanner class:
+import java.util.Scanner;
+
+- we can read java input from System.in using Scanner class
+- Scanner is final class, that can not be extended
+- Scanner class is part of java.util package
+
+Useful methods
+--------------
+next()
+nextLine()
+nextBoolean()
+nextByte()
+nextDouble()
+nextFloat()
+nextInt()
+nextLong()
+nextShort()
+
+-----------
+Desc
+------------
+- A Scanner class break its input into tokens using a delimeter patter, which by default mataches 	whitespace
+
+- The resulting token may then be converted into values of different types using the various next 
+	methods 
+
+	
