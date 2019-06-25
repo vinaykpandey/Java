@@ -26,6 +26,28 @@ String str4 = new String ("Vinay"); // always create new object
 The java.lang.String class differs from other classes, one difference being that the String objects can be used with the += and + operators for concatenation
 
 
+--------
+String methods
+---------
+toUpperCase()
+toLowerCase()
+indexOf(int ch)
+indexOf(int ch,  int fromIndex)
+indexOf(String str)
+indexOf(String str,  int fromIndex)
+lastIndexOf(int ch)
+lastIndexOf(int ch, int fromIndex)
+lastIndexOf(String str)
+lastIndexOf(String str, int fromIndex)
 
 
+
+
+
+
+Comaring Strings
+------------
+equals()
+equalsIgnoreCase(String anotherString)
+compareTo(String s)
 
