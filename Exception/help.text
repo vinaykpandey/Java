@@ -1,0 +1,127 @@
+Four Types(Options)
+	- Default throw and default catch
+	- Default throw and our catch
+	- Our throw and default catch
+	- Our throw and our catch
+
+- Java exception handling is used to handle error conditions in  a program systematically 
+	by taking the necessary action
+
+
+Class Hierarchy
+
+Throwable:
+1: Error
+2: Exception
+
+2.1: IOException
+2.2: ClassNotFoundException
+2.3: RuntimeException
+
+2.3.1: IllegalArgumentException
+2.3.2: NullPointerException
+2.3.3: ArithmaticException
+
+2.3.1.1: NumberFormatException
+
+-------------
+throw catch
+------------
+- Java exceptions are raised with the throw keyword and handled within a catch block.
+
+---------
+Throwable
+----------
+
+- The Throwable class provides a String variable that can be set by the superclass to provide 
+	a detail message that provides more information of the exception occurred
+
+- All classes of Throwable define a one parameter constructor that take a string as the detail 
+	message
+
+- The class Throwable provides getMessage() function to retrive the exception
+
+- The class Exception represents exceptions that a program faces due to abnormal or special
+	conditions during the execution
+
+- Exceptions can be of 2 types: Checked(Compile time Exceptions ), Unchecked (Run time exceptions)
+
+--------------
+Unchecked: 
+-------------
+
+	Its a runtime exceptions (RuntimeException) and any of its subclass
+
+	ArrayIndexOutOfBonds, NullPointerException and so on, all are subclasses of the 
+	java.lang.RuntimeException class, which is a subclass of the Exception
+
+-------------------------
+default throw default catch
+---------------------------
+Example1.java
+
+----------------------------
+default throw and our catch
+Exmample2.java
+----------------------------
+
+	try{
+		<code>
+	} 
+	catch(<exception type> <parameter>){
+		// 0 or more <statements>
+	}
+	finally{
+		// finally block <statements>
+	}
+
+- for each try block there can be zero or more catch blocks, but only one finally
+- The catch blocks and finally block must always appear in conjuction with a try block
+- A try block must be followed by either at least one catch block or one finally block
+- The order exception handlers in the catch block must be from the most specific exception
+
+
+
+-----------------------
+our throw default catch
+Exmample3.java
+----------------------
+- throw <throwableInstance>;
+- The Exception reference must be of type Throwable class or one of its subclass
+- A detail message can be passed to the constructor when the exception object is created
+
+-----------------------
+our throw and our catch
+Exmample4.java
+----------------------
+
+why should we throw an exception object?
+
+- Because we want to set a different message 
+- Because java cannot recognize exceptional situation of business logic
+
+
+
+------------
+throws   (used to handle checked exception)
+Example5.java
+-----------
+
+- Checked Exceptions forces programmers to deal with the exception that may be thrown
+
+- IOExecption, SQLException, IllegalTreadException, etc are checked exceptions
+
+- "checked" means they will be checked at compile time itself
+
+- A throws clause can be used in the method prototype
+ 
+ 	Method()throws<ExceptionType1><ExceptionType2>  ..<ExceptionTypen> {
+ 		//
+ 	}
+- The throws keyword in java is applicable to a method to indicate that the method raises 
+	particular type of exception while being processed
+
+- The throws keyword in java takes argument as a list of the objects of type
+	java.lang.Throwables class.
+
+- 
