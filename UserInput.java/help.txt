@@ -1,0 +1,23 @@
+int a[5]; // error its not like c/c++
+int a[]; //  a is referencce variable and it will refer to an array
+
+int a[] = new int[5]; //  correct
+int []a =  new int[5]; // this is also correct
+
+a -> obejct (having array element 5),  length(variable) is also a key in object
+
+
+int []arr = new int[]{2,3,6,7,8}; // correct
+
+int []arr = new int[2]{2,3,6,7,8}; // error
+
+int []arr = new int[2]{2,3,6,7,8}; // error; you can not mention size and values together
+
+int []arr = {2,3,6,7,8}; 
+
+-----------------------
+Array is not blank ever
+-----------------------
+
+
+

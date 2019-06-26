@@ -1,0 +1,14 @@
+Abstarct class have any access modifiers for members. Interface can have only public members
+
+Abstract class may or may not contain abstarct method. Interface can not have defined method
+(by default all method in interface is abstarct)
+
+Abstarct class have static or non static members. Interface can have only static member variables
+
+Abstarct class can have final or non final members. Interface can have only final member variables
+
+Interface do not have constructor unlike abstarct class 
+
+
+Similarites:
+Can not make object of both( Abstarct class & Interface)
