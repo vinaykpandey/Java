@@ -47,9 +47,20 @@ Advantage
 	Increase memory efficiency and decreases the chances for memory leak
 
 
-------------
-finalize()
------------------
+
+Garbage Collection
+------------------
+	- Removing unwanted objects or abandoned objects from the memory is 
+		called garbage collection(GC)
+	- In the languages like C++, GC is performed manually using destructors.
+
+	- There is no destructor in java
+	- Thete exist better mechanism to handle the garbage collection
+	- JVM implicitly sweeps out abondoned objects from the memory
+	- Garbage collector thread, before sweeping out an abandoned object, it calls finalize()
+		method of that object.
+
+
 
 Object's Memory
 -----------------
@@ -58,3 +69,34 @@ Object's Memory
 	- When an object is no more required, it must be removed from the memory so that, that memory
 		can be reused for other object
 
+	- finalize() methd is protected and non-static method of java.lang.Object class.
+
+------------
+finalize()
+-----------------
+
+	protected void finalize() throws Throwable{
+		// code here
+	}
+
+	- We can call finalize() method explicitly on an object before it is abandoned.
+	- When we cal, only operations kept in finalize() method are performed on an object
+	- Object will not be destroyed from the memory
+	- That means clean up operations which you have kept in the finalize() method are 
+		executed before an object is destroyed from the memory.
+	- Garbage collector thread call finalize() method only once for one object
+	- Exception occured in finalize() method are not propogated. They are ignored by the GC
+	- finalize() methods are not chained like constructors, i.e. there is no calling statement
+		to super class finalize() method inside the finalize() method of subclass.
+		we need to explicitly call super class finalize() method.
+	- we can make finalize() method to be executed forcefully using
+		- Runtime.getRunTime().runFinalization()
+		- Runtime.runFinalizersOnExit(true)
+	- But, both the methods have disadvantages
+		- Runtime.getRunTime().runFinalization() makes the just best effort to execute 	
+			finalize() method. It is not guaranteed that it will execute finalize() method
+		- Runtime.runFinalizersOnExit(true) is deprecated in JDK because some times it runs 
+			finalize() method on live objects also.
+			
+
+	# NOTE: Object class is super class of our Parent class
