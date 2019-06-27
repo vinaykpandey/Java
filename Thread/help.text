@@ -129,8 +129,16 @@ Synchronizing multiple thread
 When we start two or more threads within a program, there may be a situation when multiple 
 	threads try to access the same resource
 
-synchronized(work area){
-	
-	--------code 
-	------
-}
+	synchronized(task area){
+		
+		--------code 
+		------
+	}
+	- Java provides a very handy way of creating threads and synchronizing their task 
+		by using the synchronized blocks.
+	- We keep shared resources within this block
+
+	synchronized(objectidentifier){
+
+
+	}
