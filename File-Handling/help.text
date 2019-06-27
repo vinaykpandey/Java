@@ -68,10 +68,13 @@ File Class
 Writing File:
 -------------
 
-File OutputStream:
+File OutputStream (class):
+
 	- FileOutputStream is meant for writing streams of raw bytes
 	- FileOutputStream is subclass of OutputStream
 
+	Constructor of OutputStream
+	-----------------------------
 	- FileOutputStream(File f)
 		- creates a file output stream to write to the file represented by the specified File 
 			object.
@@ -85,5 +88,72 @@ File OutputStream:
 
 	- FileOutputStream(String fname, boolean append)
 		- creates a file output stream to write to the file with the specified name.
+
+	
+----------------
+Reading from file
+-----------------
+	- Reading data from file means extarcting data stored in the file (without deleting it from 
+		the file).
+
+ --
+ FileInputStream (class)
+ -----------------------
+ 	- FileInputStream is meant for reading streams of raw bytes
+ 	- A FileInputStream obtains input bytes from a file in a file system
+
+ 	Constructor of FileInputStream
+	-----------------------------
+	- FileInputStream(File f)
+		- creates FileInputStream by opening a file connection to an actual file, the file named
+			by the File object file in the file system
+
+	- FileInputStream(String fname)
+		- creates a FileInputStream by opening a connection to an actual file, the file named by 
+			the pathname  in the file system.
+
+	
+-------------------------
+BufferedWriter class
+-------------------------
+	- writing data to file means storing data in the file.
+	- Writes text to a character-output stream, buffering characters soo as to provide for the 
+		efficient writing of single characters, arrays, and strings
+	- The buffer size may be specified, or the default size may be accpeted. The default is large
+		enough for most purposes.
+
+ 	Constructor
+ 	----------
+ 	BufferedWriter(Write out)
+ 		- creates a buffred character-output stream that uses a default-sized output buffer.
+
+ 	BufferedWriter(Write out, int sz)
+ 		- creates a new buffred character-output stream that uses a an output buffer of the 
+ 			given size.
+
+
+-------------------------
+BufferedReader class
+-------------------------
+	Constructor
+	-------------------
+	BufferedReader(Reader in)
+		- creates a buffering character-input stream that uses a default-sized input buffer.
+
+	BufferedReader(Reader in, int sz)
+		- creates a buffering character-input stream that uses an input buffer of the specified 
+			size.
+
+
+-------------
+Methods of BufferedReader
+------------------
+	String readLine()
+	---------------
+		- Reads a line of text
+
+	int read(char[] cbuff, int off, int len)
+	-----------------------------------------
+		- reads character into a portion of an array
 
 	
