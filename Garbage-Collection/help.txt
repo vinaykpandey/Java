@@ -1,0 +1,60 @@
+c++ => new and delete keyword 
+
+----
+Java Garbage Collection
+-----------------------
+	- Destruction of object from memory is done automatically by the JVM
+	- No delete keyword in java
+	- When there is no reference to an object, then that object is assumed to be no longer needed
+		and the memory occupied by the object are released
+	- This technique is called Garbage Collection
+	- This is accomplished by the JVM
+
+JVM Thread
+-------------
+	- Whenever we run a java program, JVM creates three threads
+		- main thread
+		- Thread Scheduler
+		- Garbage Collector Thread
+
+	- In these three threads, main thread is a user thread and remaining tow are daemon threads
+		which run in background
+
+	- The task of main thread is to execute the main() method
+	- The task of thread scheduler is to schedule the threads
+	- The task of garbage collector thread is to sweep out abandoned objects from the heap
+		memory
+
+	- Abandoned objects or dead objects are those objects which does not have live references
+
+	-----
+	finalize method
+	---------------
+	-  Garbage collector thread before sweeping out an Abandoned object, it calls finalize()
+		method of that object
+	- After finalize() method is executed, object is destroyed from the memory
+
+------------
+cannot force for gc (type of request)
+------------------
+	- We can call garbage collector explicitly using System.gc() or RunTime.getRunTime().gc()
+	- But, it is just a request to garbage collector not a command
+	- Its upto garbage collector to honor this request
+
+--
+Advantage
+---------------
+	Increase memory efficiency and decreases the chances for memory leak
+
+
+------------
+finalize()
+-----------------
+
+Object's Memory
+-----------------
+	- An object is created in the memory using new operator. Constructor is used to initialize 
+		the properties of that object
+	- When an object is no more required, it must be removed from the memory so that, that memory
+		can be reused for other object
+
