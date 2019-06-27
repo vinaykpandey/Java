@@ -13,3 +13,124 @@ Two way to create thread in java
 	2: By extending the Thread class (java.lang.Thread)
 
 
+Steps:
+
+	1: Creating a Thread
+	2: Atatch code to the thread
+	3: Executing thread
+
+---------------------
+Runable Interface
+--------------------
+	public interface Runnable{
+		void run();
+	}
+
+	- One way to create a thread is to implement the Runnable Interface and then instantiated an  
+	  object of the class
+
+	- We need to override the the run() method into our class which is the only method that needs 
+	  to be implemented
+
+
+------------------
+using Thread Class
+-------------------
+
+// Note:  A B can not extend other class (multilevel inheritance is not handle in java)
+
+
+
+---------
+Threads State
+-------------
+	- A java thread is always in one of several states which could be running, sleeping, dead,  
+		etc.
+	- States:
+		New thread
+		Runnable
+		Not Runnable
+		Dead
+
+-----------
+State: New Thread
+----------
+- A thread is in this new state when the instantiation of the Thread object creates a new thread 	
+	but does not start it running
+- A thread starts life in the Ready-to-run state.
+- You can call only the start() or stop() methods when the thread is this state
+	Calling any method besides start() or stop() causes an IllegalThreadException.
+	(A decendant class of RuntimeException)
+
+-----------
+State: Runnable
+----------
+- When the start() method is invoked on a New Thread() it gets to the runnable state or running 
+	state by calling the run() method
+
+- A runnable thread may actually be running or may be awaiting its to run
+
+-----------
+State:  Not Runnable
+-------------------
+- A thread becomes Not Runnable when one of the following four events occurs.
+	sleep(): When sleep() method invoke its sleeps for a specified amount of time
+	suspend(): When suspend() method is invoked
+	wait(): When the wait() method is invoked and the thread waits for the notification of a free
+			resource or wait for the completion of another thread or waits to acquire a lack of an object
+	i/o: The thread is blocking on I/O and waits for its completion
+
+---------------------------------------
+switching from not runnable to runnable
+---------------------------------------
+	- If a thread has been put to sleep, then the specified number of milliseconds must be elapse
+	  (or it must be interrupted)
+
+	- If a thread has been suspended, then its resume() method must be invoked
+
+	- If a thread is waiting on a condition variable, whatever object owns the variable must 
+		relinquish it by calling either notify() or notifyAll()
+
+	- If a thread is blocked on I/O, then the I/O must complete.
+
+
+---------
+Dead
+-----------
+	- A thread enters this state when the run() method has finished executing or when the stop()
+		method is invoked. Once in this state, the thread can not ever run again
+
+
+---------------------
+Thread Priority
+--------------------
+	- In java, we can specify the priority of each thread relative to other threads
+	- Those threads having higher priority get greater access to available resources
+	  then lower priority threads
+   -------------------
+   Thread priority is inherited
+   ---------------------------
+   - A java thread inherits its priority from the thread that created it.
+
+   - We can modify a thread's priority at any time after its creation using the 
+   			setPriority() method and retrieve the thread priority value using getPriority() method.
+
+   	The following static final integer constants are defined the Thread class:
+   		- MIN_PRIORITY(0)  Lowest Priority
+   		- NORM_PRIORITY(5) Default Priority
+   		- MAX_PRIORITY(10) Highest Priority
+
+   		 10( max priority)
+
+
+----------------------------------
+Synchronizing multiple thread
+----------------------------------
+When we start two or more threads within a program, there may be a situation when multiple 
+	threads try to access the same resource
+
+synchronized(work area){
+	
+	--------code 
+	------
+}
