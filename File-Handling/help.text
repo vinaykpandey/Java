@@ -1,0 +1,89 @@
+--
+Data
+Data persistance
+File
+File handling
+
+File Handline
+---------------
+java.io
+ - The java.io package contains nearly every class you might ever need to perform input and 
+   output (I/O) in Java.
+ - All these streams represent an input source and an output destination
+ - Java provides strong but flexible support for I/O related to Files
+
+Streams:
+	- Stream represents a Source(which generates the data in the form of Stream) and 
+		destination (which consumes or read data available as Stream)
+	-  Streams supports a huge range of source and destinations including disk file, arrays,
+		other devices, other program etc.
+
+Types of Stream
+----------------
+Two types of stream: byte, character
+
+Byte Streams
+------------
+	- Provide a convenient means for handling input and output of bytes
+
+Character streams
+------------------
+	- Its designed for handling the input and output of characters
+
+Byte Stream Classes:
+-------------------
+	- BufferedInputStream
+	- BufferedOutputStream
+	- ByteArrayInputStream
+	- ByteArrayOutputStream
+	- DataInputStream
+	- DataOutputStream
+	- PrintStream
+	- RandomAccessFile
+
+Character Stream Classes:
+---------------------------
+	- BufferedReader
+	- BufferedWriter
+	- CharArrayReader
+	- FileReader
+	- FileWriter
+	- InputStreamReader
+	- OutputStreamReader
+	- OutputStreamWriter
+	- PrintWriter
+	- StringWriter
+	- StringReader
+
+
+----------------
+File Class
+-----------------
+	- An abstract representation of file and directory pathnames
+
+	- java.io.Fileimport java.io.File
+	- e.g.: FileIntro.java
+
+------------
+Writing File:
+-------------
+
+File OutputStream:
+	- FileOutputStream is meant for writing streams of raw bytes
+	- FileOutputStream is subclass of OutputStream
+
+	- FileOutputStream(File f)
+		- creates a file output stream to write to the file represented by the specified File 
+			object.
+
+	- FileOutputStream(File f, boolean append)
+		- creats a file output stream to write to the file represented by the specified File 
+			object.
+
+	- FileOutputStream(String fname)
+		- creates a file output stream to write to the file with the specified name.
+
+	- FileOutputStream(String fname, boolean append)
+		- creates a file output stream to write to the file with the specified name.
+
+	
