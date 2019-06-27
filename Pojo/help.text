@@ -1,0 +1,8 @@
+POJO: Plain Old Java Object
+
+This is rules to define a Pojo class
+	1: class must be public
+	2: properties/variables must be private
+	3: must having public default constructor (No argument constructo)
+	4: can have argument constructor also (optional)
+	5: every proprties should have public getter and setter methods
