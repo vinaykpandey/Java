@@ -1,5 +1,6 @@
+
 ----------
-Generics
+Generics 
 -----------
 - Java Generic methods and generic classes enable programmers to specify, with a single method 
 	declaration, a set of related methods or, with a single class declaration, a set of related types.
@@ -12,6 +13,16 @@ Rules
   		(< and > ) that precedes the method's return type.
   - Each type parameter section contains one or more type parameters separated by commas
   - The type parameters can be used do declare the return type
+  - Type parameters can be represent only refrence types, not primitive types(e.g.: int, double, 
+  		char, float, ..etc)
   
 
 
+----------
+Generics Class
+-------------
+	-  A generic class declaration looks like a non-generic class declaration, except that the 
+		class name is followed by a type parameter section
+	- As with generic methods, the type parameter section of a generic class can have one or more 
+		type parameters sparated by commas
+	
