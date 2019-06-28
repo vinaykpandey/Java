@@ -1,0 +1,99 @@
+Collection vs Collections
+------------------------
+	- Collection is a interface
+	- Collections is a class
+		- Collections class provides sevral utility methods like sort()
+
+Methods of Collection (interface)
+-------------------------
+	boolean add(Object o);
+	- Add an object to the collection
+
+	boolean addAll(Collection c);
+	- Add all the objects of specified collection
+
+	boolean remove(Object o);
+	- Removes a single instance of the specified element from this collection
+
+	boolean removedAll(Collection c);
+	- Removes all of this collection's elements that are also contained in the specified 
+		collection
+
+	boolean retainAll(Collection c);
+	- Retains only the elements in this collection that are contained in the specified collection
+
+	int size()
+	- Return the number of elements in this collection
+
+	boolean contains (Object o)
+	- Returns true if this collection contains the specified object
+
+	void clear();
+	- Removes all of the elements from this collecction
+
+	boolean isEmpty()
+	- Returns true if this collection contains no elements
+
+	Iterator <E> iterator()
+	- Returns an itrator over the elements in this collection
+
+
+Methods of List Interfacce
+-------------------------
+	void add(int index, E element)
+	- insert the specified element at the specified position in this list (elements may shift)
+
+	E set(int index, E element)
+	- Replace the element at the specified position in the list with the specified element
+
+	E get(int index)
+	- Returns the element at the specified position in this list
+
+	int indexOf(Object o)
+	- Returns the index of the first occurrence of the specified element in this list, or -1 if 
+		this list does not contain the element
+
+	int lastIndexOf(Object o)
+	- Returns the index of the last occurrence of the specified element in this list, or -1 if 
+		this list does not contain the element
+
+	E remove (int index)
+	- Removes the element at the specified position in this list
+
+	List<E> subList(int fromIndex, int toIndex)
+	- Returns a view of the position of this list between the specified fromIndex, inclusive , 	
+		and toIndex exclusive
+
+-----
+note: There is no concrete class which implements Collection interface directly
+------
+
+------------------------------
+ArrayList
+------------------------------
+- ArrayList is defined using dynamic arrays
+- It is resizable (grow, shrink)
+- duplicates are allowed
+- order of element are preserved
+- Null insertion is possible
+- Hetrogeneous objects are allowed
+
+- Except TreeSet and TreeMap Hetrogeneous objects are allowed
+
+-----
+ArrayList constructor
+---------------------
+	ArrayList al = new ArrayList();
+
+	- Creates an empty ArrayList object with default initial capacity "10" if ArrayList
+		reaches its max capacity then a new ArrayList object will be created with 
+		New capacity = (current capacity*3/3)+1
+
+	ArrayList al = new ArrayList(int initialcapacity);
+	- creates an empty ArrayList object with the specified initial capacity
+
+	ArrayList al = new ArrayList(collection c);
+	- creates an equivalent ArrayList object for the given collection
+
+	
+

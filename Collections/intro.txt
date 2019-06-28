@@ -32,8 +32,8 @@ Collection framework
 
 Interfaces in Collection framework
 ----------------------------------
-- Collection
-----------
+- Collection (interface)
+-----------------
 - for group of object
 
 	- List
@@ -42,27 +42,27 @@ Interfaces in Collection framework
 		- Insertion order must be preserved
 		- ArrayList, LinkedList, Vector, Stack, are the implementation classes
 
-	-Set
+	-Set (interface)
 	---------------
 		- a collection that can not contain duplicate elements
 		- insertion order is not preserved
 		- HashSet, LinkedHashSet are the classes implemented Set interface
 
 		--------
-		SortedSet
+		SortedSet (interface)
 		----------
 			- Child interface of Set
 			- can not contain duplicate interface
 			- Some sorted order
 
 			-------
-			NavigableSet
+			NavigableSet (interface)
 			------------
 				- Child interface of SortedSet
 				- It defines seravl methods for navigation purposes
 				- TreeSet is implementaion class
 
-	Queue
+	Queue (interface)
 	-------------
 		- Child interface of Collection
 		- PriorityQueue, BlockingQueue, LinkedBlockingQueue, PriorityBlockingQueue
@@ -96,7 +96,7 @@ Hierarchy
 
 
 ----------------
-Map  Interface
+Map  (interface)
 -----------------
  - It is used to  represent group of objects as key-value pairs
  - Map is not a child interface of Collection
@@ -104,7 +104,7 @@ Map  Interface
  - Key must be unique but vales can be repeat
  - HashMap, LinkedHashMap, WeakhashMap, IdentityHashMap, HashTable, Properties
 
-1:  Map Interface
+1:  Map (interface)
 ------------------
 1.1: Hashmap (class) // Hashmap (class) implements Map (interface)
 1.1.1: LinkedHashMap (class) // LinkedHashMap (class) extends Hashmap (class)
@@ -119,3 +119,17 @@ Map  Interface
 1.5: SortedMap (interface) // SortedMap (class) extends Map (interface)
 1.5.1: NavigableMap (interface) // NavigableMap (interface) extends SortedMap (interface)
 1.5.1.1: TreeMap (class) //  TreeMap (class) implements NavigableMap (interface) 
+
+
+-----------
+Sorting
+----------------
+ - Comparable (interface)
+ .......................
+ 	- interface for default sorting
+
+----------------
+ - Comparator(interface)
+ .......................
+ 	- interface for customized sorting
+ 
