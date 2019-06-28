@@ -1,0 +1,11 @@
+-------
+Cusrosrs
+----------------
+- Cursors are used to retrive data from collecction object, one by one.
+
+- There are three cursor in java
+	- Enumeration
+	- Iterator
+	- ListIterator
+
+	

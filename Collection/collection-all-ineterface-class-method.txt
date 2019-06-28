@@ -70,6 +70,7 @@ note: There is no concrete class which implements Collection interface directly
 
 ------------------------------
 ArrayList
+https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
 ------------------------------
 - ArrayList is defined using dynamic arrays
 - It is resizable (grow, shrink)
@@ -95,5 +96,75 @@ ArrayList constructor
 	ArrayList al = new ArrayList(collection c);
 	- creates an equivalent ArrayList object for the given collection
 
-	
+------------------
+LinkedList and  ArrayList
+------------------
+- In ArrayList elements are stored in consecutive memory allocation
+- In ArrayList, Insertion in the middle requires massive shift, which reduce the performance
+- In LinkedList elements are not necessasry to be stored in contineous memory locations
+- In LinkedList, Cost of inserting an element in the middle is lesser as no shift is required
+- Accesing nth element in LinkedList is costly
+- Accessing elements in ArrayList take constant time
 
+----------
+Method of LinkedList
+
+https://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html
+
+--------------------
+	void addFirst(Object o)
+
+	void addLast(Object o)
+
+	Object getFirst()
+
+	Object getLast()
+
+	Object removeFirst()
+
+	Object removeLast()
+
+
+-------
+contrcutor in LinkedList
+-----------------
+	LinkedList()
+
+	LinkedList(Collection c)
+
+
+-------------
+Vector
+https://docs.oracle.com/javase/8/docs/api/java/util/Vector.html
+------------------
+- Vector is implementation class of List interface
+- Dynamic Array is used to implement Vector 
+- Duplicates are allowed
+- Insertion order is preserved
+- Null insertion is allowed
+- Heterogeneous are allowed
+- Methods are synchronized so thread safe
+
+ArrrayList VS Vector
+--------------------
+- ArrayList is not thread safe
+- ArrayList methods are non synchronized
+- ArrayList is high performance
+- first introduce in : v1.2
+- Vector is thread safe
+- Vector method are synchronized
+- Low performance
+- first in : v1.0, modify in v1.2
+
+--------------------
+Stack
+https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html
+----------------
+- LIFO (last in first out) principle
+- subclass of vector
+
+----------
+constructor of Stack
+-------------------
+- There is only one constrcutor, which creates an empty stack
+	- Stack()
