@@ -1,0 +1,121 @@
+--------------------
+Collection framework
+---------------------
+	- The collection framework provides a well designed set of interfaces and classes for storing 
+		and manipulating groups of data as a single unit.
+
+	Intefaces
+	---------
+		- These are the abstract data types that represent collections
+
+	Implementation(classes)
+	-----------------------
+		- These are the concrete implementation of the collection iterfaces
+
+	Algorithms
+	-----------
+		- These are the methods that perform useful computations, such as searching and sorting, 	on objects that implement collection interfaces
+
+ Advantages:
+ ------------
+ - Represent group of values as a single entity
+ - size expandable (grow, shrink dynamically)
+ - Array is faster (static memory) than collections (dynamic memory)
+ - collection support both homogeneous and hetrogeneous
+ - collection classes are mainly abstarct data type (ADT): structures, methods for ADT already 
+ 		coded
+ 
+ Collection Vs Array
+ ---------------------
+ 	- If the size is known Array is a better choice in terms of performance
+ 	- Collection provides flexibilty in memory which increases the time complexity
+
+Interfaces in Collection framework
+----------------------------------
+- Collection
+----------
+- for group of object
+
+	- List
+	---------------
+		- Duplicates allowed
+		- Insertion order must be preserved
+		- ArrayList, LinkedList, Vector, Stack, are the implementation classes
+
+	-Set
+	---------------
+		- a collection that can not contain duplicate elements
+		- insertion order is not preserved
+		- HashSet, LinkedHashSet are the classes implemented Set interface
+
+		--------
+		SortedSet
+		----------
+			- Child interface of Set
+			- can not contain duplicate interface
+			- Some sorted order
+
+			-------
+			NavigableSet
+			------------
+				- Child interface of SortedSet
+				- It defines seravl methods for navigation purposes
+				- TreeSet is implementaion class
+
+	Queue
+	-------------
+		- Child interface of Collection
+		- PriorityQueue, BlockingQueue, LinkedBlockingQueue, PriorityBlockingQueue
+
+
+-----------------------
+Hierarchy
+------------------------
+1: Collection  (interface)
+
+1.1: List (interface) //List (interface) extends Collection (interface)
+1.1.1: ArrayList (class)// ArrayList(class) implements List (interface)
+1.1.2: LinkedList (class)// LinkedList(class) implements List (interface)
+1.1.2: Vector (class)// Vector(class) implements List (interface)
+1.1.2.1: Stack (class)// Stack(class) extends Vector (class)
+
+1.2:  Set (interface) // Set (interface) extends Collection (interface)
+
+1.2.1: HashSet(class) // HashSet (class) implements Set (interface)
+1.2.1.1: LinkedHashSet(class) //  LinkedHashSet (class) extends HashSet(class)
+
+1.2.2: SortedSet(interface) // SortedSet(interface) extends Set (interface)
+1.2.2.1: NavigableSet(interface) // NavigableSet(interface) extends SortedSet(interface)
+1.2.2.1.1: TreeSet (class) // TreeSet(class) implements NavigableSet(interface) 
+
+1.3:  Queue (interface) // Queue (interface) extends Collection (interface)
+1.3.1: PriorityQueue (class) // PriorityQueue (class) implements Queue (interface)
+1.3.2: BlockingQueue (class) // BlockingQueue (class) implements Queue (interface)
+1.3.2.1: LinkedBlockingQueue(class) // LinkedBlockingQueue(class) extends BlockingQueue (class)
+1.3.2.2: PriorityBlockingQueue(class) //PriorityBlockingQueue(class) extends BlockingQueue (class)
+
+
+----------------
+Map  Interface
+-----------------
+ - It is used to  represent group of objects as key-value pairs
+ - Map is not a child interface of Collection
+ - key and values both are objects
+ - Key must be unique but vales can be repeat
+ - HashMap, LinkedHashMap, WeakhashMap, IdentityHashMap, HashTable, Properties
+
+1:  Map Interface
+------------------
+1.1: Hashmap (class) // Hashmap (class) implements Map (interface)
+1.1.1: LinkedHashMap (class) // LinkedHashMap (class) extends Hashmap (class)
+
+1.2: WeakhashMap (class) // WeakhashMap (class) implements Map (interface)
+
+1.3: IdentityHashMap (class) // IdentityHashMap (class) implements Map (interface)
+
+1.4: HashTable (class) // HashTable (class) implements Map (interface)
+1.4.1: Properties (class)  // Properties (class) extends HashTable (class)
+
+1.5: SortedMap (interface) // SortedMap (class) extends Map (interface)
+1.5.1: NavigableMap (interface) // NavigableMap (interface) extends SortedMap (interface)
+1.5.1.1: TreeMap (class) //  TreeMap (class) implements NavigableMap (interface) 
