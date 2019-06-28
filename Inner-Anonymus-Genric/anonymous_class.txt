@@ -1,0 +1,13 @@
+- Anonymous classes in Java are more accurately known as anonymous inner classes
+- There's no such thing as anonymous classes without the "inner"
+- They are defined inside another class
+
+Note: Anonymous is always inner class
+- An Anonymous (inner) class is an inner class that is delared without using a class name
+- An Anonymous class must have parent class
+- Reference variable of parent class can refer child class also
+- we have to override the method from parent class so that we can access it
+- In override, java do late binding not early binding
+
+--- 
+

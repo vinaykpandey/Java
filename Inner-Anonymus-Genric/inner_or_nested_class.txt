@@ -1,0 +1,30 @@
+---------------------------
+Nested Class (Inner Class)
+----------------------------
+- In java, just like methods, variables of class to can have another class as its member
+
+- The class written within a class is called nested class
+
+- The class that holds the inner class is called the outer class
+
+Types of Inner class
+----------------------
+	1: Static inner class
+	2: Non static inner class
+
+Difference between static vs non-static inner class
+---------------------------------------------------
+	- Static inner class instance can be created outside the outer class with the following 
+		syntax:
+		Outer.Inner obj = new Outer.Inner();
+
+	- No need to create instance of outer class
+
+---------------------------
+Inner classes can be private
+----------------------------
+	- We know a class cannot be associated with the access modifier private, but if we have the 
+		class as a member of the other class, then the inner class can be made private.
+
+	- Inner class can be private, protected, public, or default
+	
