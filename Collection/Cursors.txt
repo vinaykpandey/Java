@@ -8,4 +8,61 @@ Cusrosrs
 	- Iterator
 	- ListIterator
 
-	
+---
+Enumeration
+--------------------
+	- Enumeration is an interface in java
+	- Enumeration introduced in v1.0, thus only available for legacy classes (like Vector or 	
+		Stack)
+	- An object that implements the Enumeration interface generates a series of elements, one at 	a time
+	- Successive calls to the nextElement method return successive elements of series
+
+	- code def:
+
+		public interface Enumeration <E> {
+			boolean hasMoreElements();
+
+			E nextElemet();
+
+		}
+
+	Obtaining Enumeration
+	----------------------
+		Vector v = new Vector()
+		Enumeration e = v.element();
+
+NOTE: element is available for Vector & Stack,  but not for ArrayList, LinkedList
+	  so  Enumeration is applicable for Vector & Stack.
+
+
+---------
+Iterator
+--------------
+ - Iterator is available for all collection implemented class
+ 
+ ----------
+ Obtaining Iterator
+ ----------
+ 	- All collection implemented classes provide a method called iterator()
+ 	   - public Iterator  iterator()
+
+ 	- Iterator it = obj.iterator();
+
+---
+Iterator Interface
+--------------------
+	Interfacce Iterator {
+		public boolean hasNext();
+		public Object next();
+		public void remove(); // not available in Enumeration
+	}
+
+-------------------------------------
+Limitation of Enumeration and Iterator
+--------------------------------------
+ - Enumeration and Iterator, both can move in single direction cursors
+ - Only read and remove operations are available
+ 	- Not able to add new objects
+ 	- Not able to replace/update any element
+
+ 
