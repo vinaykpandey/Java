@@ -65,4 +65,25 @@ Limitation of Enumeration and Iterator
  	- Not able to add new objects
  	- Not able to replace/update any element
 
- 
+ -------------------
+ ListIterator
+ --------------------
+ - ListIterator is child interface of Iterator
+ - ListIterator is bidirectional cursor
+ - All List implemented classes provide a method called listIterator()
+ 	- public ListIterator listIterator()
+
+ ----------------
+ ListIterator Interface
+ ---------------------
+  public Interface ListIterator{
+  		public boolean hasNext();
+  		public Object next();
+  		public int nextIndex();
+  		public boolean hasPrevious();
+  		public Object previous();
+  		public int previousIndex();
+  		public void remove();
+  		public void set(E e);
+  		public void add(E e);
+  }
