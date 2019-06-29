@@ -88,7 +88,7 @@ ArrayList constructor
 
 	- Creates an empty ArrayList object with default initial capacity "10" if ArrayList
 		reaches its max capacity then a new ArrayList object will be created with 
-		New capacity = (current capacity*3/3)+1
+		New capacity = (current capacity*3/2)+1
 
 	ArrayList al = new ArrayList(int initialcapacity);
 	- creates an empty ArrayList object with the specified initial capacity
@@ -168,3 +168,137 @@ constructor of Stack
 -------------------
 - There is only one constrcutor, which creates an empty stack
 	- Stack()
+
+
+
+--------------
+Set (interface)
+--------------
+ - Set (interface)  extends Collection (interface)
+ - Set is child interface of Collection interface
+ - Duplicates are not allowed
+ - Insertion order is not preserved
+ - Set interface does not have any new method
+ 
+ - *LinkedHashSet class preserved insertion order
+
+ -------
+ HashSet
+ https://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html
+ --------
+ - HashSet (class) implements Set (interface)
+ - Hash Table is the data structure
+ - If you try to insert duplicate object, add method simple returns false, as 
+ 	duplicates are not allowed
+ - Insetion order is not preserved but all objects are inserted based on hash code
+ - Heterogeneous objeccts are allowed
+ - Null values are allowed
+ - Provide efficient searching
+ 
+ ----------------------
+ constrcutor in HashSet
+ ----------------------
+	HashSet()
+	  	- default capacity 16
+	  	- After 75% HashSet is filled, it grows dynamically
+	  		- Thus fill ratio or load factor is 0.75
+
+	HashSet(int capacity)
+		- Load factor is 0.75
+
+	HashSet(int capacity, float loadFactor)
+
+	HashSet(Collection c)
+
+-----------------
+LinkedHashSet
+https://docs.oracle.com/javase/7/docs/api/java/util/LinkedHashSet.html
+---------------
+	- Child class of HashSet
+	- Insetion order preserved unlike hashset
+	- Hash Table and Doubly Linked list both are used (hybrid data strcuture)
+
+	----
+	constructor
+	------------
+		LinkedHashSet()
+			- Default initial capacity is 16
+			- Load factor .75
+
+		LinkedHashSet(int capacity)
+
+		LinkedHashSet(int capacity, float loadfactor)
+
+		LinkedHashSet(Collection c)
+
+
+
+-----------
+Sorted Set (Interface)
+https://docs.oracle.com/javase/7/docs/api/java/util/SortedSet.html
+------------------------------------------------------------------
+	- SortedSet is a child interface of Set interface
+	- Duplicates are not allowed
+	- Elements are in sorted order
+	- Sorted interface introduce 6 new methods
+	- diff b/e Set & SortedSet
+		- In Set, order is not important
+		- In SortedSet, order is important  (some logical order)
+
+	------------------
+	SortedSet methods
+	-------------------
+		first()
+		 	- returns the first element of the set
+ 		last()
+ 			- returns the last element of the set
+ 		headSet(E toElement)
+ 			- returns a view of the portion of this set whose elements are strcitly
+ 				less than toElement
+ 		tailSet(E fromElement)
+ 			-  returns a view of the portion of this set whose elements are greater 
+ 				than or equal to fromElement
+ 		subSet(E fromElemnt, E toElement)
+ 			- returns a view of the portion of this set whose elements range from 
+ 				fromElement, inclusive to toElment, exclusive
+ 		comparator()
+ 			- returns the comarator used to order the elements in this set, or null 
+ 				if this set uses the netural ordering of its elements
+ 	
+ 	Natural Order
+ 	-------------
+ 		For Numbers: Ascending order
+ 		For Strings: Dictionary order
+
+
+--------------
+NavigableSet (interface)
+https://docs.oracle.com/javase/7/docs/api/java/util/NavigableSet.html
+---------------
+	- Child interface of Sortedset (interface)
+	- provides methods for navigation in sorted list of elements
+
+	--------------------
+	NavigableSet Methods
+	--------------------
+		ceiling(E e)
+			- returns the least element in this set greater than or equal to the given element,
+				or null if there is no such element
+		floor(E e)
+			- returns the greatest element in this set less than or equal to the given element, 
+				or null if there is no such element
+		higher(E e)
+			- returns the least element in this set strictly greater than the given element,
+				or null if there is no such element
+		lower(E e)
+			- returns the greatest element in this set strictly less than the given element, 
+				or null if there is no such element
+		pollFirst()
+			- retrives and removes the first(lowest) element, or returns null if set is empty
+		pollLast()
+			- retrives and removes the last(highest) element, or returns null if this set is 
+				empty
+
+---------------------
+TreeSet (class)
+---------------------
