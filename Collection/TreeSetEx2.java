@@ -1,10 +1,11 @@
 import java.util.*;
 
-public class TreeSetEx {
+public class TreeSetEx2 {
 
 	public static void main(String []args){
 		TreeSet ts = new TreeSet();
-		//ts.add(null); // make no sense so its not allowed after java v6
+		ts.add(null); // its valid upto java version 6 
+		// in v6 we can not add anything else other than null
 		System.out.println("TreeSet: " + ts); 
 	}
 }

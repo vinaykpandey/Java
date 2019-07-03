@@ -299,6 +299,31 @@ https://docs.oracle.com/javase/7/docs/api/java/util/NavigableSet.html
 			- retrives and removes the last(highest) element, or returns null if this set is 
 				empty
 
+
+
 ---------------------
 TreeSet (class)
+https://docs.oracle.com/javase/8/docs/api/?java/util/TreeSet.html
 ---------------------
+- TreeSet (class) is implementation  class  of NavigableSet (interface)
+- Duplicates are not allowed
+- Store elements in some logical order (sorted)
+- Heterogeneous objects are not allowed
+	- When tried ClassException generated
+- Null values are acceptable for empty TreeSet, for Non empty TreeSet Null is not acceptable
+
+--------------------
+TreeSet Constructors
+--------------------
+	TreeSet()
+		- constructs a new empty tree set, sorted according to the natural ordering of its  
+			elements
+	TreeSet(Comparator c)
+		- constructs a new empty tree set, sorted according to the specified comparator
+	TreeSet(Collection c)
+		- constructs a new tree set containing the elements in the specified collection, sorted 
+			according to the natural ordering of its elements
+	TreeSet(SortedSet s)
+		- constructs a new tree set containing the same elements and using the same ordering as
+		 	the specified sorted set
+ 
