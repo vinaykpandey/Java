@@ -326,4 +326,52 @@ TreeSet Constructors
 	TreeSet(SortedSet s)
 		- constructs a new tree set containing the same elements and using the same ordering as
 		 	the specified sorted set
- 
+
+
+-----------------
+Default natural order
+----------------------
+	- Default natural sorting order work for
+		- Homogeneous objects
+		- Comparable objects 
+	- StringBuffer objects are non comparable (its comparable in java 11)
+	- String,Integer class implements comparable
+
+-----
+Comparble (interface)
+-------------------
+	- comparable interface belongs to java.lang package
+		interface Comparable{
+			int compareTo(Object obj);
+		}
+
+-------------
+compareTo()
+-----------
+	- o1.compareTo(o2)
+	- returns negative value if o1 < o2
+	- returns positive value if o1 > o2
+	- returns zero if o1 == o2
+
+
+----------
+Comparator (interface)
+----------
+	- Comparable is used for default natural sorting order
+	- Comparator is used for custom sorting order
+	- Comparator interface resides in java.util package
+
+	interface Comparator {
+		int compare(Object ob1, Object ob2);
+		equals();
+	}
+	---------
+	methods
+	------------
+	int compare(Object ob1, Object ob2);
+		- returns negative value if ob1 < ob2
+		- returns positive value if ob1 > ob2
+		- returns zero if ob1 == ob2
+
+	boolean equals()
+		- dummy method (implementation is optional)
