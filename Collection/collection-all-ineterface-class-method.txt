@@ -375,3 +375,5 @@ Comparator (interface)
 
 	boolean equals()
 		- dummy method (implementation is optional)
+
+	

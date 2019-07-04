@@ -1,0 +1,45 @@
+------------
+Queue Interface
+https://docs.oracle.com/javase/7/docs/api/java/util/Queue.html
+-------------
+	- Child interface of Collection
+	- Null values are not allowed
+	- Duplicate values are allowed
+	- Heterogeneous elements are allowed
+	- The Queue interface basically orders the elements in FIFO (First In First Out) manner
+
+	-----------------
+	methods of Queue
+	-----------------
+		boolean offer(E e)
+		E poll()
+		E peek()
+		: returns special value (null or false)
+
+		boolen add (E e)
+		E remove()
+		E element()
+		:- throws exception on fail
+
+--------------
+Priority Queue
+https://docs.oracle.com/javase/7/docs/api/java/util/PriorityQueue.html
+--------------
+	- Implementation class of Queue
+	- The elements of the priority queue are ordered according to their natural ordering, 
+		or by a Comparator provider at queue constrcution time
+	- Null is not allowed
+	- Not thread safe
+	- Use PriorityBlockingQueue for thread safe
+
+	----------
+	constructors
+	------------
+	PriorityQueue()
+		- initial capacity is 11 and natural ordering
+
+	PriorityQueue(Collection c)
+	PriorityQueue(int initialCapacity)
+	PriorityQueue(int initialCapacity, Comparator c)
+	PriorityQueue(SortedSet s)
+	PriorityQueue(PriorityQueue p)
