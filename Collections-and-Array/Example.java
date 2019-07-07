@@ -8,7 +8,7 @@ public class Example{
 		v.add(30);
 		System.out.println(v);
 		Collections.sort(v);
-		int x = Collections.binarySearch(v, 30); 
+		int x = Collections.binarySearch(v, 10); 
 		// binarySearch is always work for sorted list
 		System.out.println(v);
 		System.out.println(x);
