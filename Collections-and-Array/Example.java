@@ -1,16 +1,16 @@
 import java.util.*;
 public class Example{
 	public static void main(String []args){
-		Vector v = new Vector();
-		v.add(20);
-		v.add(50);
-		v.add(10);
-		v.add(30);
-		System.out.println(v);
-		Collections.sort(v);
-		int x = Collections.binarySearch(v, 10); 
-		// binarySearch is always work for sorted list
-		System.out.println(v);
-		System.out.println(x);
+		// int a[] = new int []{10,30,20,50,40};
+		int a[] = {10,30,20,50,40};
+		System.out.println(a);
+		for(int i=0; i< a.length;  i++){
+			System.out.print(a[i]+" ");
+		}
+		Arrays.sort(a);
+		System.out.println(a);
+		for(int i=0; i< a.length;  i++){
+			System.out.print(a[i]+ " ");
+		}
 	}
 }
