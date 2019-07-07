@@ -1,0 +1,20 @@
+Collections - class
+collection - interface
+Arrays - class (have utility method)
+
+-------------------
+Collections (class)
+------------------
+	- Collections class resides in util package
+	- This class consists of exclusively os static methods that operate on or retuurn collections
+
+	---------------------
+	Methods of Collections
+	----------------------
+		public static void sort(List list)
+		public static void sort(Lits list, Comparator c)
+		public static int binarySearch(List list, T key)
+		public static int binarySearch(List list, T key, Comparator c)
+		public static void reverse(list list)
+		public static void shuffle(List list)
+		public static void swap(List list, int i, int j)
