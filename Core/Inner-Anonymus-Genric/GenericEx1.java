@@ -21,8 +21,7 @@ public class GenericEx{
 	public static void main(String []args){
 		GenericEx ge = new GenericEx();
 		String cname[] = new String[]{"India", "USA", "UK"};
-		Integer n[] = new Integ
-		er[]{11,12,13};
+		Integer n[] = new Integer[]{11,12,13};
 		int []nr = new int[]{2,3,6,7,8}; 
 		ge.printA(cname);
 		ge.printA(n);
